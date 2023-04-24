@@ -4,26 +4,18 @@
     w { color:#ff6666; }
     y { color:#e6e600; }
       
-	.main {
+	.aligned {
 		    position: absolute;
 		    left: 50%;
 	    	transform: translate(-50%, 0%);
     }
+
+    .tab div        { display: none;  }
+    .tab div:target { display: block; }
       
-	  a {
+	a {
         text-decoration:none;
-        color:#99ccff;
-    }
-      
-	  a:target {
-		    color:#e6e600;
-		    text-shadow: 2px 2px #4d4d00;
-		    content: "here";
-    }
-      
-    a:target:before {
-        content: "=> ";
-        color:red ;
+        color:white;
     }
 	body { 
         white-space: pre; 
@@ -43,12 +35,24 @@
         flex-grow: 1;
         text-align: center;
     }
+    h1 { text-align: center; }
+    h1 a { color: #aaaaaa }
+    li a { color: #aaaaaa }
+    b { color: #FFFFFF }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+    }
         
     </style>
 </head>
-<body meta>
-    <div class="main">
-                         __                                                     
+<body><div class="aligned">
+	    
+                    Hi I'm Monty! <y>Site under construction...</y>                 
+
+                  Text doesn't fit the screen? Turn your phone.
+<index id="HOME"/><a href=#HOME>                         __                                                     
   ____     ____   ___  _/  |_  ___ __ ___   ___  ____ _______    ______  ____   
 ,¯    ¯\  /¯ _¯\ |   ¯\\   __\<   Y  |\  \ /  /_/ __¯\\_  __ \  /¯¯___/_/ __¯\  
 |  Y Y  \(  (_) )|  .  \|  |  '\___  | \  V  / \  ___/ |  | )/  \___  \\  ___/  
@@ -61,11 +65,10 @@
   <li><a href="#HELPDOMORE">HELP<b>DO</b>MORE!</a></li>
   <li><a href="#WHERETOGO">WHERE<b>TO</b>GO?</a></li>
   <li><a href="#REACHMENOW">REACH<b>ME</b>NOW!</a></li>
-</ul></div1>
-	    
-                    Hi I'm Monty! <y>Site under construction...</y>                 
-                                                                                
-                      Last Update:  <g>16/04/2023 - Stockholm</g>
-                                                                                
+</ul></div1><div class="tab">
+<div id="WHOAMI"/><h1><a href="#HOME">#WHO<b>AM</b>I?</a></h1><whoami></whoami></div><div id="WHATIDO"/><h1><a href="#HOME">#WHAT<b>I</b>DO?</a></h1><whatido></whatido></div><div id="HELPDOMORE"/><h1><a href="#HOME">#HELP<b>DO</b>MORE!</a></h1><helpdomore></helpdomore></div><div id="WHERETOGO"/><h1><a href="#HOME">#WHERE<b>TO</b>GO?</a></h1><wheretogo></wheretogo></div><div id="REACHMENOW"/><h1><a href="#HOME">#REACH<b>ME</b>NOW!</a></h1><reachmenow></reachmenow></div>
 </div>
 </body>
+<footer>
+                      Last Update:  <g>25/04/2023 - Stockholm</g>
+</footer>
